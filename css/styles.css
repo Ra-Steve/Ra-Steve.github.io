@@ -5,6 +5,13 @@ html {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: initial;
+  }
 }
 
 body {
@@ -87,6 +94,26 @@ video {
   font-size: 1rem;
   margin-top: 0.5rem;
   color: white;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.hero-button:hover {
+  transform: scale(0.95);
+}
+
+.hero-button:active {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* Portfolio Gallery Styles */
